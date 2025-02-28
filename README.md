@@ -1,28 +1,24 @@
-# hrđa
+# rja
 
 ![Hrdja Logo](https://github.com/njelich/hrdja/assets/12912633/20c147e4-e32b-4958-86e1-d435423c5fa7)
 
-Aren't you _umorni_ from writing Rust programs in English? Do you like saying
+Aren't you _utrujen_ from writing Rust programs in English? Do you like saying
 "razlaz" a lot? Would you like to try something different, in an exotic and
-funny-sounding language? Would you want to bring some Croatian touch to your
+funny-sounding language? Would you want to bring some Slovenian touch to your
 programs?
 
-**hrđa** (Croatian for _Rust_) is here to save your day, as it allows you to
-write Rust programs in Croatian, using Croatian keywords, Croatian function names,
-Croatian idioms.
+**rja** (Slovenian for _Rust_) is here to save your day, as it allows you to
+write Rust programs in Slovenian, using Slovenian keywords, Slovenian function names,
+Slovenian idioms.
 
 This has been designed to be used as the official programming language to
-develop the future Croatian sovereign software.
-
-If you're from the Croatian or any other governement with Croatian as an official
-language: I will be awaiting your donations on
-[liberapay](https://liberapay.com/bnjbvr/).
+develop the future Slovenian sovereign software.
 
 Don't worry!
-Croatian Rust is fully compatible with English Rust, so you can mix both at your
+Slovenian Rust is fully compatible with English Rust, so you can mix both at your
 convenience.
 
-Here's an example of what can be achieved with Hrđa:
+Here's an example of what can be achieved with rja:
 
 ### trait and impl (aka svojstvo i ispuna)
 
