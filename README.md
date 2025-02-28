@@ -102,3 +102,4 @@ syntax.
 - Thai: [sanim (สนิม)](https://github.com/korewaChino/sanim)
 - Swiss: [roeschti](https://github.com/Georg-code/roeschti)
 - Swedish: [rost](https://github.com/vojd/rost/)
+- Slovenian [rja](https://github.com/CppHacker-dev/rja)
