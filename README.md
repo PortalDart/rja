@@ -20,33 +20,33 @@ convenience.
 
 Here's an example of what can be achieved with rja:
 
-### trait and impl (aka svojstvo i ispuna)
+### trait and impl (aka lastnost in implementacija)
 
 ```rust
 hrđa::hrđa! {
-    koristi std::collections::KartaSažetaka kao Rječnik;
+    uporablja std::collections::HashMap kot Slovar;
 
-    svojstvo KljučVrijednost {
-        fn napiši(&suština, ključ: ZnakovniNiz, valeur: ZnakovniNiz);
-        fn dohvati(&suština, ključ: ZnakovniNiz) -> Rezultat<Neobavezno<&ZnakovniNiz>, ZnakovniNiz>;
+    lastnost KljučVrednost {
+        fn zapiši(&se, ključ: NizZnakov, vrednost: NizZnakov);
+        fn pridobi(&se, ključ: NizZnakov) -> Rezultat<Možnost<&NizZnakov>, NizZnakov>;
     }
 
-    nepokretno izmjenjiv RJECNIK: Neobavezno<Rječnik<ZnakovniNiz, ZnakovniNiz>> = Nijedan;
+    nepokretno spremenljivo SLOVAR: Možnost<Slovar<NizZnakov, NizZnakov>> = Nič;
 
-    građa GPKrk;
+    struktura GPKrk;
 
-    ispuna KljučVrijednost za GPKrk {
-        fn napiši(&suština, ključ: ZnakovniNiz, valeur: ZnakovniNiz) {
-            dopusti rjecnik = opasno {
-                RJECNIK.dohvati_ili_ubaci_uz(Podrazumijevano::podrazumijevano)
+    implementacija KljučVrednost za GPKrk {
+        fn zapiši(&se, ključ: NizZnakov, vrednost: NizZnakov) {
+            dopusti slovar = nevarno {
+                SLOVAR.pridobi_ali_vstavi_z(Podrazumevano::podrazumevano)
             };
-            rjecnik.ubaci(ključ, valeur);
+            slovar.vstavi(ključ, vrednost);
         }
-        fn dohvati(&suština, ključ: ZnakovniNiz) -> Rezultat<Neobavezno<&ZnakovniNiz>, ZnakovniNiz> {
-            ako dopusti Neki(rjecnik) = opasno { RJECNIK.ko_upuć() } {
-                URedu(rjecnik.dohvati(&ključ))
-            } inače {
-                Kiks("dohvati rjecnik".pretvori())
+        fn pridobi(&se, ključ: NizZnakov) -> Rezultat<Možnost<&NizZnakov>, NizZnakov> {
+            če dopusti Nekaj(slovar) = nevarno { SLOVAR.ko_upuć() } {
+                Vredu(slovar.pridobi(&ključ))
+            } drugače {
+                Napaka("pridobi slovar".pretvori())
             }
         }
     }
