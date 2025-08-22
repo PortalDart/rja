@@ -2,6 +2,10 @@
 
 ![Hrdja Logo](https://github.com/njelich/hrdja/assets/12912633/20c147e4-e32b-4958-86e1-d435423c5fa7)
 
+
+This is not finished and it will not work.
+
+
 Aren't you _utrujen_ from writing Rust programs in English? Do you like saying
 "razlaz" a lot? Would you like to try something different, in an exotic and
 funny-sounding language? Would you want to bring some Slovenian touch to your
